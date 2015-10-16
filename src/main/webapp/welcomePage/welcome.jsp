@@ -16,15 +16,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<link href="welcomePage/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="welcomePage/css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="welcomePage/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	
+	<script src="welcomePage/js/jquery.js"></script>
+    <script src="welcomePage/js/bootstrap.min.js"></script>
+<!--     <script src="welcomePage/js/modal.js"></script> -->
+     <script src="welcomePage/js/transition.js"></script>   
+    
+	<link href="welcomePage/css/bootstrap.min.css" rel="stylesheet">
+    <link href="welcomePage/css/landing-page.css" rel="stylesheet">
+    <link href="welcomePage/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="welcomePage/css/style.css" rel="stylesheet" type="text/css" />
+<!--     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
     </head>
     <body>
 
@@ -51,14 +53,41 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="welcomePage/welcome.jsp#services">服务</a>
                     </li>
                     <li>
-                        <a href="welcomePage/welcome.jsp#contact">全部课程</a>
+                        <a href="welcomePage/welcome.jsp#contact">在线课程</a>
+                    </li>
+                    <li>
+                    <button class="text-center">测试</button>
+                    <button class="loginBtn">登陆/注册</button>
+                    <button  class="btn btn-info" data-toggle="modal" data-target="#myModal">登陆/注册</button>
+<!--                     <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>   -->
+<!--                     	<a href="" data-toggle="modal" data-target="#myModal" href="login/login.jsp">登陆/注册</a> -->
+<!--                     	<input id="btntext" type="button" value="添加文本组件" data-toggle="modal" data-target="#myModal"/> -->
                     </li>
                 </ul>
+                
             </div>
         </div>
     </nav>
-
-
+	
+	<!-- 弹出层 -->
+	
+	 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+	            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
@@ -143,33 +172,69 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
+      <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect to Start Bootstrap:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
+                <div class="col-lg-12 text-center">
+                    <h2>在线课程</h2>
+                    
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        <img src="welcomePage/img/portfolio/cabin.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                             <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        <img src="welcomePage/img/portfolio/cake.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                             <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        <img src="welcomePage/img/portfolio/circus.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                             <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        <img src="welcomePage/img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                             <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        <img src="welcomePage/img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                             <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                        <img src="welcomePage/img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-lg-12 text-center" style="margin-top:30px">
+                   <button type="button" class="btn btn-primary btn-lg">全部课程</button>
+                </div>
+                
+            </div>
         </div>
-        <!-- /.container -->
-
-    </div>
     <!-- /.banner -->
 
     <!-- Footer -->
@@ -179,19 +244,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="welcomePage/welcome.jsp">首页</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="welcomePage/welcome.jsp#about">About</a>
+                            <a href="welcomePage/welcome.jsp#services">服务</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="welcomePage/welcome.jsp#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="welcomePage/welcome.jsp#contact">Contact</a>
+                            <a href="welcomePage/welcome.jsp#contact">在线课程</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
@@ -200,11 +261,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+   
 
 </body>
 
