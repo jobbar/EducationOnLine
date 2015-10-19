@@ -31,44 +31,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">智慧云课堂</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="welcomePage/welcome.jsp#about">首页</a>
-                    </li>
-                    <li>
-                        <a href="welcomePage/welcome.jsp#services">服务</a>
-                    </li>
-                    <li>
-                        <a href="welcomePage/welcome.jsp#contact">在线课程</a>
-                    </li>
-                    <li>
-                    <button class="text-center">测试</button>
-                    <button class="loginBtn">登陆/注册</button>
-                    <button  class="btn btn-info" data-toggle="modal" data-target="#myModal">登陆/注册</button>
-<!--                     <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>   -->
-<!--                     	<a href="" data-toggle="modal" data-target="#myModal" href="login/login.jsp">登陆/注册</a> -->
-<!--                     	<input id="btntext" type="button" value="添加文本组件" data-toggle="modal" data-target="#myModal"/> -->
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
-	
+
+	<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+		<div class="row">
+			<div class="col-xs-2 col-md-1">
+			
+			</div>
+		  	<div class="col-xs-4 col-md-3">
+				<a class="navbar-brand" href="welcomePage/welcome.jsp#about">智慧云课堂</a>
+			</div>
+		  	<div class="col-xs-8 col-md-6">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="welcomePage/welcome.jsp#about">首页</a>
+					</li>
+					<li>
+						<a href="welcomePage/welcome.jsp#services">服务</a>
+					</li>
+					<li>
+						<a href="welcomePage/welcome.jsp#contact">在线课程</a>
+					</li>
+				</ul>
+			</div>
+		  	<div class="col-xs-2 col-md-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						 <button  class="loginBtn" data-toggle="modal" data-target="#myModal">登陆/注册</button>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-2 col-md-1">
+			
+			</div>
+		</div>
+	</nav>
 	<!-- 弹出层 -->
 	
 	 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -76,15 +72,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h4 class="modal-title" id="myModalLabel">用户登陆</h4>
           </div>
           <div class="modal-body">
-	            ...
+	      <form class="form-horizontal" action="login.do" method="POST">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+					    <div class="col-sm-10">
+					      <input type="text" name="userName" class="form-control" id="inputEmail3" placeholder="你的用户名" required autofocus>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">密&nbsp&nbsp&nbsp&nbsp码</label>
+					    <div class="col-sm-10">
+					      <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="你的密码" required>
+					    </div>
+					  </div>
+				
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          	<a href="UserRegiste/userRegiste.jsp" style="float: left;">没有账户？马上注册--></a>
+            <button type="reset" class="btn btn-default">清除</button>
+            <button type="submit" class="btn btn-primary">登陆</button>
           </div>
+          </form>
         </div>
       </div>
     </div>
@@ -172,7 +183,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
-      <div class="container">
+	<div class="content-section-b">
+	<div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>在线课程</h2>
@@ -235,6 +247,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 
             </div>
         </div>
+	</div>
+      
     <!-- /.banner -->
 
     <!-- Footer -->
