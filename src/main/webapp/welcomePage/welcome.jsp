@@ -17,15 +17,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	
-	<script src="welcomePage/js/jquery.js"></script>
-    <script src="welcomePage/js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 <!--     <script src="welcomePage/js/modal.js"></script> -->
-     <script src="welcomePage/js/transition.js"></script>   
+     <script src="js/transition.js"></script>   
     
-	<link href="welcomePage/css/bootstrap.min.css" rel="stylesheet">
-    <link href="welcomePage/css/landing-page.css" rel="stylesheet">
-    <link href="welcomePage/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="welcomePage/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 <!--     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
     </head>
     <body>
@@ -91,7 +91,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
           </div>
           <div class="modal-footer">
-          	<a href="UserRegiste/userRegiste.jsp" style="float: left;">没有账户？马上注册--></a>
+          	<a href="userRegiste/userRegiste.jsp" style="float: left;">没有账户？马上注册--></a>
             <button type="reset" class="btn btn-default">清除</button>
             <button type="submit" class="btn btn-primary">登陆</button>
           </div>
@@ -128,7 +128,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <p class="lead">通过预先设定的问题或课堂上及时地追问,启发学生层层深入地思考问题.课堂提问要促进学生思维的活跃,重视对学生思维的启发.启发学生的问题是由浅入深的问题,而不是平铺直叙,串讲内容的问题.教师“讲”的时机、内容、方式很重要,恰如其分的讲解也是一种启发.及时捕捉</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="welcomePage/img/ipad.png" alt="">
+                    <img class="img-responsive" src="img/ipad.png" alt="">
                 </div>
             </div>
 
@@ -150,7 +150,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <p class="lead">通过预先设定的问题或课堂上及时地追问,启发学生层层深入地思考问题.课堂提问要促进学生思维的活跃,重视对学生思维的启发.启发学生的问题是由浅入深的问题,而不是平铺直叙,串讲内容的问题.教师“讲”的时机、内容、方式很重要,恰如其分的讲解也是一种启发.及时捕捉</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="welcomePage/img/dog.png" alt="">
+                    <img class="img-responsive" src="img/dog.png" alt="">
                 </div>
             </div>
 
@@ -172,7 +172,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <p class="lead">智能教育平台为基础架构，面向中小学课外教育领域推出的考拉课堂项目自2013年正式启动，项目包括在线的考拉教育开放平台，实体的考拉社区课堂和基于移动设备的考拉超级课堂等部分，形成全面创新的O2O教育和学习生态圈。</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="welcomePage/img/phones.png" alt="">
+                    <img class="img-responsive" src="img/phones.png" alt="">
                 </div>
             </div>
 
@@ -197,7 +197,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <div class="caption">
                               <i class="fa fa-search-plus fa-3x"></i>
                         </div>
-                        <img src="welcomePage/img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -205,7 +205,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <div class="caption">
                              <i class="fa fa-search-plus fa-3x"></i>
                         </div>
-                        <img src="welcomePage/img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -213,7 +213,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <div class="caption">
                              <i class="fa fa-search-plus fa-3x"></i>
                         </div>
-                        <img src="welcomePage/img/portfolio/circus.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -221,7 +221,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <div class="caption">
                              <i class="fa fa-search-plus fa-3x"></i>
                         </div>
-                        <img src="welcomePage/img/portfolio/game.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -229,7 +229,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <div class="caption">
                              <i class="fa fa-search-plus fa-3x"></i>
                         </div>
-                        <img src="welcomePage/img/portfolio/safe.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -237,7 +237,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <div class="caption">
                              <i class="fa fa-search-plus fa-3x"></i>
                         </div>
-                        <img src="welcomePage/img/portfolio/submarine.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 

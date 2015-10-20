@@ -17,7 +17,7 @@ public class UserServiceTest{
 	public void testAddUser(){
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 		UserService service = (UserService)ctx.getBean("userService");
-		Sysuser u = new Sysuser(3,"zhangsan1","123");
+		Sysuser u = new Sysuser("3","zhangsan1","123");
 		
 		service.addUser(u);
 		

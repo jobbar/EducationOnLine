@@ -103,7 +103,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="tabbable" id="tabs-669547">
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#panel-814953" data-toggle="tab" style="border-top: 4px solid #53A2FD">新用户注册</a>
+						<a href="#panel-814953" data-toggle="tab" style="border-top: 4px solid #53A2FD">用户注册成功</a>
 					</li>
 					
 				</ul>
@@ -113,33 +113,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="row">
 							<div class="col-md-4"></div>
 							<div class="col-md-4" style="padding-top:5%;padding-bottom:5%">
-								<form action="registe.do" method="POST">
-									<div class="form-group">
-									    <label for="InputEmail1">电子邮箱</label>
-									    <input type="email" class="form-control" id="InputEmail1" name="inputEmail1" placeholder="Email" required autofocus>
-									 </div>
-									 <div class="form-group">
-									    <label for="UserName">用户名</label>
-									    <input type="text" class="form-control" id="UserName" name="inputUserName" placeholder="userName" required >
-									 </div>
-									 <div class="form-group">
-									    <label for="InputPassword1">密码</label>
-									    <input type="password" class="form-control" id="InputPassword1" name="inputPassword1" placeholder="Password" required >
-									 </div>
-									 <div class="form-group">
-									    <label for="InputPassword2">确认密码</label>
-									    <input type="password" class="form-control" id="InputPassword2" name="inputPassword2" placeholder="Password" required>
-									 </div>
-									 <div class="form-group">
-									 	<label for="InputRole">用户角色</label>
-									 	<select class="form-control" id="InputRole" name="inputRole" required>
-									 		<option>学生</option>
-									 		<option>教师</option>
-									 	</select>
-									 </div>
-<!-- 							  		 <button type="submit" class="btn btn-default" onclick="check()" >注册</button> -->
-							  		 <button type="submit" class="btn btn-info btn-lg btn-block" onclick="check()">立即注册</button>
-								</form>
+								<h1 class="text-center text-success" contenteditable="false">恭喜您！注册成功</h1>	
 						  </div>
 						  <div class="col-md-4"></div>
 						</div>
